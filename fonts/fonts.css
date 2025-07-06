@@ -15,7 +15,16 @@
     local('Inter-Variable'),
     url(../fonts/Inter-Variable.woff2) format('woff2 supports variations'),
     url(../fonts/Inter-Variable.woff2) format('woff2-variations');
-  font-weight: 100 400 785 900;
+  font-weight: 785 900;
   font-display: swap;
   font-stretch: 75% 100%;
+  font-variation-settings: 
+    "wght" 400,
+    "wdth" 100;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: Inter-Variable, sans-serif;
+  }
 }
