@@ -9,3 +9,54 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+@keyframes animation {
+  /* Анимация для одной из картинок */
+
+  0% {
+    filter: invert(0%);
+    transform: scaleX(1) scaleY(1);
+  }
+
+  25% {
+    filter: invert(15%);
+    transform: scaleX(0.9) scaleY(0.9);
+  }
+
+  50% {
+    filter: invert(30%);
+    transform: scaleX(0.8) scaleY(0.8);
+  }
+
+  75% {
+    filter: invert(15%);
+    transform: scaleX(0.9) scaleY(0.9);
+  }
+
+  100% {
+    filter: invert(0%);
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes scale {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes sparks {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,1 +1,56 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  /* Текст основной */
+  --main-font-family: 'Inter-Variable', sans-serif;
+  --main-font-size: 18px;
+  --main-line-height: 120%;
+  /* Текст основной */
+
+  /* Текст пиксель */
+  --accent-font-family: 'PressStart2P-Regular', monospace;
+  --accent-font-size-h1: clamp(14px, 14.7vw, 63px);
+  --accent-font-size-h2: clamp(14px, 5vw, 23px);
+  --accent-font-size: 14px;
+  --accent-font-size-h1-mobile: clamp(20px, 49px, 49px);
+  --accent-line-height: 100%;
+  --accent-line-height-small: 90%;
+  --accent-line-height-dialog: 150%;
+  /* Текст пиксель */
+
+  /* Цвета */
+  --primary-text-color: #000;
+  --hover-fill-color: var(--primary-text-color);
+  /* Цвета */
+
+  /* BACKGROUND */
+  --background-color: #fff;
+  --bg-page:
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  /* BACKGROUND */
+
+  /* BUTTONS */
+  --background-button-hover: var(--background-color);
+  --button-font-family: var(--accent-font-family);
+  --button-font-size: var(--accent-font-size);
+  /* BUTTONS */
+
+  /* LIKE ANIMATION */
+  --contour-color: #000;
+  --animation-fill-color: #f00;
+  /* LIKE ANIMATION */
+}
