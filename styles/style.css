@@ -1,17 +1,4 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-/* ANIMATION START */
-
-/* ANIMATION END */
+/* Спасибо за ревью :-) */
 
 /* COMMON START */
 
@@ -30,8 +17,6 @@
   background-attachment: fixed;
   position: relative;
   z-index: 1;
-
-  /* фон это градиент */
 }
 
 .button {
@@ -39,7 +24,7 @@
   font-size: var(--button-font-size);
   line-height: var(--accent-line-height-small);
   color: var(--primary-text-color);
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid var(--border-color);
   background-color: var(--background-color);
   cursor: pointer;
   transition: box-shadow 0.3s ease, color 0.5s ease-in-out;
@@ -92,7 +77,7 @@
   align-items: center;
   font-family: var(--accent-font-family);
   padding: 128px clamp(14px, 5vw, 120px);
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid var(--border-color);
   margin: 100px 0;
   background-color: var(--background-color);
 }
@@ -142,7 +127,7 @@
   display: grid;
   grid-template-rows: min-content 1fr;
   font-size: var(--main-font-size);
-  border: 2px solid #000;
+  border: 2px solid var(--border-color);
   background-color: var(--background-color);
 }
 
@@ -188,6 +173,8 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
 }
 
 .sepia {
@@ -247,7 +234,7 @@
 
 .card__icon-button:focus-visible {
   outline: none;
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid var(--border-color);
 }
 
 .like-icon {
@@ -360,7 +347,7 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: 1fr min-content;
-  gap: 20px; /* отступ между колонками */
+  gap: 20px;
   align-items: center;
 }
 
@@ -377,6 +364,11 @@
 }
 
 @media (width <= 375px) {
+
+  .image-block__label {
+    top: 25px;
+    right: 13px;
+  }
 
   .button__save-button {
     flex-direction: column;

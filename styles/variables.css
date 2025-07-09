@@ -10,7 +10,7 @@
   /* Текст пиксель */
   --accent-font-family: "PressStart2P", monospace;
   --accent-font-size-title: clamp(14px, 14.7vw, 63px);
-  --accent-font-size-subtitle: clamp(14px, 5vw, 23px);
+  --accent-font-size-subtitle: clamp(14px, 4vw, 23px);
   --accent-font-size: 14px;
   --accent-font-size-title-mobile: clamp(20px, 49px, 49px);
   --accent-line-height: 100%;
@@ -21,6 +21,7 @@
   /* Цвета */
   --primary-text-color: #000;
   --hover-fill-color: var(--primary-text-color);
+  --border-color: var(--primary-text-color);
   /* Цвета */
 
   /* BACKGROUND */
